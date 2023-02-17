@@ -70,7 +70,7 @@
 
 // let number = 0;
 
-// while (number <= 50) {   
+// while (number <= 50) {
 //     console.log(number);
 //      number += 1;
 // }
@@ -217,51 +217,83 @@ if (question === "ecmascript") {
 // Написати ф-цію, яка прибиратиме з масиву всі значення, які перетворюються на false
 // undefined, null, false, '', 0, NaN
 
-const array = [
-  1,
-  0,
-  54,
-  'doc',
-  null,
-  'jpg',
-  undefined,
-  '',
-  'png',
-  'exe',
-  false,
-  'mp4',
-  NaN,
-  'hbs',
-];
+// const array = [
+//   1,
+//   0,
+//   54,
+//   'doc',
+//   null,
+//   'jpg',
+//   undefined,
+//   '',
+//   'png',
+//   'exe',
+//   false,
+//   'mp4',
+//   NaN,
+//   'hbs',
+// ];
 
-function clearArray(array){
+// function clearArray(array){
 
-    let newArray = [];
+//     let newArray = [];
 
-    for (let i = 0; i < array.length; i += 1){
+//     for (let i = 0; i < array.length; i += 1){
 
-        if (array[i]) {
-            newArray.push(array[i]);
-        }
-    }
+//         if (array[i]) {
+//             newArray.push(array[i]);
+//         }
+//     }
 
-    return newArray;
-}
-console.log(clearArray(array));
+//     return newArray;
+// }
+// console.log(clearArray(array));
 
 //TODO: 16 ===================================
 // Перевірити два масиву і дізнатися, чи вони рівні
 
-// const arr1 = [1, 4, 6, 'color', 324, 232, 'list', 11, 9, 'dream', 34, 0, -30];
-// const arr2 = [6, 'dream', -30, 11, 9, 1, 324, 34, 'color', 4, 232, 0, 'list'];
+const arr1 = [1, 4, 6, 'color', 324, 232, 'list', 11, 9, 'dream', 34, 0, -30];
+const arr2 = [6, 'dream', -30, 11, 9, 1, 324, 34, 'color', 4, 232, 0, 'list'];
 
-// const arr3 = [4, 232, 6, -30, 'color', 324, 'list', 1, 11, 9, 'dream', 34, 0];
-// const arr4 = ['color', 6, -30, 11, 9, 1, 'dream', 324, 34, 4, 232, 0, 'list'];
+const arr3 = [4, 232, 6, -30, 'color', 324, 'list', 1, 11, 9, 'dream', 34, 0];
+const arr4 = ['color', 6, -30, 11, 9, 1, 'dream', 324, 34, 4, 232, 0, 'list'];
 
-// const arr5 = [1, 4, 6, 'color', 'list', 11, 9, 'dream', 34, 0, -30, 'lesson'];
-// const arr6 = [6, 324, 'dream', -30, 9, 8, 34, 'color', 4, 232, 0, 'list', 11];
+const arr5 = [1, 4, 6, 'color', 'list', 11, 9, 'dream', 34, 0, -30, 'lesson'];
+const arr6 = [6, 324, 'dream', -30, 9, 8, 34, 'color', 4, 232, 0, 'list', 11];
 
-// const arr7 = [1, 4, 6, 'color', 324, 232, 'list', 11, 9, 'dream', 34, 0, -30];
-// const arr8 = [6, 'dream', -30, 10, 9, 1, 324, 34, 'color', 4, 232, 0, 'list'];
+const arr7 = [1, 4, 6, 'color', 324, 232, 'list', 11, 9, 'dream', 34, 0, -30];
+const arr8 = [6, 'dream', -30, 10, 9, 1, 324, 34, 'color', 4, 232, 0, 'list'];
 
-console.log('Let`s start');
+console.log('arr1 -',arr7.length);
+console.log('arr2 -', arr8.length);
+        
+function compareArrays(arr1, arr2) {
+     
+    if (arr1.length !== arr2.length) { 
+        return false;
+    }     
+    
+     for (let i = 0; i < arr1.length; i += 1){
+         if (!arr2.includes(arr1[i])) {
+             console.log('тут');
+            return false;
+        }        
+    }
+
+    return true;
+}
+
+// console.log(compareArrays(arr1, arr2));
+// console.log(compareArrays(arr3, arr4));
+// console.log(compareArrays(arr5, arr6));
+console.log(compareArrays(arr7, arr8));
+
+
+
+
+
+
+
+
+
+
