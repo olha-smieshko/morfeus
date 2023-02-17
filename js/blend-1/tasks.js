@@ -1,19 +1,37 @@
 //TODO: 1 ===================================
 // Якщо змінна a дорівнює 10, виведіть 'Вірно', інакше виведіть 'Невірно'.
 
-const a = 6;
+// const a = 6;
 // if(a === 10) {
 //     console.log("Вірно");
 // } else {
 //     console.log("Невірно");
 // }
 
-const result = a === 10 ? console.log("Вірно") : console.log("Невірно");
-console.log(result);
+// const result = a === 10 ? console.log("Вірно") : console.log("Невірно");
+// console.log(result);
 
 //TODO: 2 ===================================
 // У змінній min лежить число від 0 до 59. Визначте у котру чверть години
 // Попадає це число (у першу, другу, третю або четверту).
+
+// function time (min) {
+
+//     if (min >=0 && min <= 15 ) {
+//       return "перша";
+//     } else if (min > 15 && min <= 30){
+//       return "друга";
+//     } else if (min > 30 && min <= 45) {
+//       return "третя";
+//     } else if (min > 45 && min <= 59) {
+//     return "четверта";
+// }
+// return "невірне значення";
+//   }
+// console.log (time (-1));
+// console.log (time (25));
+// console.log (time (40));
+// console.log (time (46));
 
 //TODO: 3 ===================================
 // Змінна num може набувати 4 значення: 1, 2, 3 або 4. Якщо вона має
