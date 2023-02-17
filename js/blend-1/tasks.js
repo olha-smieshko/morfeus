@@ -217,23 +217,37 @@ if (question === "ecmascript") {
 // Написати ф-цію, яка прибиратиме з масиву всі значення, які перетворюються на false
 // undefined, null, false, '', 0, NaN
 
-// const array = [
-//   1,
-//   0,
-//   54,
-//   'doc',
-//   null,
-//   'jpg',
-//   undefined,
-//   '',
-//   'png',
-//   'exe',
-//   false,
-//   'mp4',
-//   NaN,
-//   'hbs',
-// ];
+const array = [
+  1,
+  0,
+  54,
+  'doc',
+  null,
+  'jpg',
+  undefined,
+  '',
+  'png',
+  'exe',
+  false,
+  'mp4',
+  NaN,
+  'hbs',
+];
 
+function clearArray(array){
+
+    let newArray = [];
+
+    for (let i = 0; i < array.length; i += 1){
+
+        if (array[i]) {
+            newArray.push(array[i]);
+        }
+    }
+
+    return newArray;
+}
+console.log(clearArray(array));
 
 //TODO: 16 ===================================
 // Перевірити два масиву і дізнатися, чи вони рівні
