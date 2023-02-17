@@ -84,7 +84,15 @@
 // показати через alert: "Вірно!"
 //інакше відобразити: "Не знаєте? ECMAScript!"
 
-// const question = prompt('Яка «офіційна» назва JavaScript?').toLowerCase();
+/* const question = prompt('Яка «офіційна» назва JavaScript?').toLowerCase();
+
+if (question === "ecmascript") {
+    alert("Вірно!");
+} else {
+    alert("Не знаєте? ECMAScript!");
+} */
+
+
 
 //TODO: 6 ===================================
 // Напишіть програму, яка отримає від користувача
