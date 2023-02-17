@@ -116,6 +116,20 @@ if (question === "ecmascript") {
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
 
+// const min = 3;
+// const max = 7;
+// let total = 0;
+
+// for(let i = max; i >= min; i -= 1) {
+//     if(i % 2 !== 0) {
+//         continue;
+//     }
+//     total += i;
+// }
+// console.log(total);
+
+
+
 //TODO: 8 ===================================
 //Напишіть код, який запитуватиме
 //логін за допомогою prompt і логувати результат
