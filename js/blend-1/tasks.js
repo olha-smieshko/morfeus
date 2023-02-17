@@ -101,6 +101,16 @@ if (question === "ecmascript") {
 //70 === 01:10
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/padStart
 
+// const globalMinuts = 80;
+// const hours = Math.floor(globalMinuts / 60);
+// const modifiedHours = String(hours).padStart(2,0)
+
+// // const minuts = globalMinuts - 60 * hours
+// const minuts = globalMinuts % 60;
+// const modifiedMinuts = String(minuts).padStart(2,0)
+// console.log(`${modifiedHours}:${modifiedMinuts}`)
+
+
 //TODO: 7 ===================================
 //Напишіть цикл, який виводить у консоль
 // числа від max до min за спаданням
