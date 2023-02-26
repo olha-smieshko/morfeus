@@ -239,7 +239,7 @@ if (question === "ecmascript") {
 //Якщо ділитися на 3 і на 5 повернути fizzbuzz
 
 // const number = prompt('Введіть число');
-// 
+
 // if (!Number(number % 3) && !Number(number % 5)) {
 //     alert('fizzbuzz');
        
