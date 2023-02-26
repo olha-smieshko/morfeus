@@ -217,37 +217,37 @@ if (question === "ecmascript") {
 // Написати ф-цію, яка прибиратиме з масиву всі значення, які перетворюються на false
 // undefined, null, false, '', 0, NaN
 
-// const array = [
-//   1,
-//   0,
-//   54,
-//   'doc',
-//   null,
-//   'jpg',
-//   undefined,
-//   '',
-//   'png',
-//   'exe',
-//   false,
-//   'mp4',
-//   NaN,
-//   'hbs',
-// ];
+const array = [
+  1,
+  0,
+  54,
+  'doc',
+  null,
+  'jpg',
+  undefined,
+  '',
+  'png',
+  'exe',
+  false,
+  'mp4',
+  NaN,
+  'hbs',
+];
 
-// function clearArray(array){
+function clearArray(array){
 
-//     let newArray = [];
+    let newArray = [];
 
-//     for (let i = 0; i < array.length; i += 1){
+    for (let i = 0; i < array.length; i += 1){
 
-//         if (array[i]) {
-//             newArray.push(array[i]);
-//         }
-//     }
+        if (array[i]) {
+            newArray.push(array[i]);
+        }
+    }
 
-//     return newArray;
-// }
-// console.log(clearArray(array));
+    return newArray;
+}
+console.log(clearArray(array));
 
 //TODO: 16 ===================================
 // Перевірити два масиву і дізнатися, чи вони рівні
@@ -286,7 +286,7 @@ if (question === "ecmascript") {
 // console.log(compareArrays(arr1, arr2));
 // console.log(compareArrays(arr3, arr4));
 // console.log(compareArrays(arr5, arr6));
-console.log(compareArrays(arr7, arr8));
+// console.log(compareArrays(arr7, arr8));
 
 
 
