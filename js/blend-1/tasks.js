@@ -147,6 +147,18 @@ if (question === "ecmascript") {
 //інакше виводити рядок "Невірний пароль!"
 
 // const loginInput = prompt('Введіть свій логін');
+// if (loginInput === 'Адмін') {
+//     const passwordInput = prompt('Введіть свій логін');
+//     if (passwordInput === 'Я головний') {
+//         alert('Добрий день!');
+//     } else if (!passwordInput) {
+//         alert('скасовано');
+//     } else {
+//         alert('Невірний пароль!');
+//     }
+// } else if (!loginInput) {
+//     alert('Я вас не знаю');
+// }
 
 //TODO: 9 ===================================
 // При завантаженні сторінки користувачеві пропонується
@@ -159,6 +171,19 @@ if (question === "ecmascript") {
 // Робити перевірку,що користувач ввів саме число,
 // а не довільний набір символів, не потрібно.
 
+
+// let total = 0;
+// while (true) {
+//     const numInput = prompt('Введіть число');
+//     total += Number(numInput);
+//     console.log(total);
+//     if (!numInput) {
+//         break;
+//     }
+// };
+// alert(`Загальна сума введених чисел дорівнює ${ total }`);
+
+
 //TODO: 10 ===================================
 // Напишіть цикл, який пропонує ввести
 // число більше 100 через prompt.
@@ -168,22 +193,71 @@ if (question === "ecmascript") {
 // введе число більше 100, або натисне кнопку
 // скасування в prompt
 
+
+// let numInput;
+
+// while (true) {
+//     numInput = prompt('Введіть число більше за 100');
+//     if (numInput > 100 || !numInput) {
+//         break;
+//     }
+// };
+// alert(`Ви ввели число: ${numInput}`);
+
 //TODO: 11 ===================================
 //Даний рядок, що складається із символів, наприклад, 'abcde'.
 // Перевірте, що першим символом цього рядка є буква 'a'.
 // Якщо це так - виведіть 'так', інакше виведіть 'ні'.
 
 // const str = 'abcde';
+// function checkFirstLetter(string, letter) {
+//     while (true) {
+//         string = prompt('Введіть рядок');
+//         if (string) {
+//             letter = prompt(`З якого символа починається рядок ${string} ?`);
+//             if (letter === string[0]) {
+//                 alert('так');
+//                 break;
+//             } else if (!letter) {
+//                 alert('Дію скасовано');
+//                 break;
+//             } else {
+//                 alert('ні');
+//                 break;
+//             }
+//         } else {
+//             alert('Дію скасовано');
+//             break;
+//         }
+//     }
+// }
+// checkFirstLetter();
 
 //TODO: 12 ===================================
 //Якщо число ділитися на 3 повертати
 //fizz якщо ділитися на 5 повертати buzz
 //Якщо ділитися на 3 і на 5 повернути fizzbuzz
 
+// const number = prompt('Введіть число');
+// 
+// if (!Number(number % 3) && !Number(number % 5)) {
+//     alert('fizzbuzz');
+       
+// } else if (!Number(number % 3)) {
+//    alert('fizz');
+
+// } else if (!Number(number % 5)) {
+//    alert('buzz');
+// } else {
+//     alert('Це число не ділиться на 3 чи 5');
+// }
+
+
+
 //TODO: 13 ===================================
 // Напишіть if..else, що відповідає наступному switch:
 
-// const browser = 'Opera';
+//  const browser = 'Edge';
 
 // switch (browser) {
 //   case 'Edge':
@@ -201,6 +275,15 @@ if (question === "ecmascript") {
 //     alert('We hope that this page looks ok!');
 // }
 
+// if (browser === 'Edge') {
+//     alert("You've got the Edge!");
+// } else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
+//     alert('Okay we support these browsers too');
+// } else {
+//     alert('We hope that this page looks ok!');
+// }
+
+
 //TODO: 14 ===================================
 // Написати ф-цію, яка створює масив із зазначеною довжиною та наповнює його переданим значенням
 // приклад: ф-ція fillArray(3, 'a') повинна повертати масив ['a', 'a', 'a']
@@ -217,37 +300,37 @@ if (question === "ecmascript") {
 // Написати ф-цію, яка прибиратиме з масиву всі значення, які перетворюються на false
 // undefined, null, false, '', 0, NaN
 
-const array = [
-  1,
-  0,
-  54,
-  'doc',
-  null,
-  'jpg',
-  undefined,
-  '',
-  'png',
-  'exe',
-  false,
-  'mp4',
-  NaN,
-  'hbs',
-];
+// const array = [
+//   1,
+//   0,
+//   54,
+//   'doc',
+//   null,
+//   'jpg',
+//   undefined,
+//   '',
+//   'png',
+//   'exe',
+//   false,
+//   'mp4',
+//   NaN,
+//   'hbs',
+// ];
 
-function clearArray(array){
+// function clearArray(array){
 
-    let newArray = [];
+//     let newArray = [];
 
-    for (let i = 0; i < array.length; i += 1){
+//     for (let i = 0; i < array.length; i += 1){
 
-        if (array[i]) {
-            newArray.push(array[i]);
-        }
-    }
+//         if (array[i]) {
+//             newArray.push(array[i]);
+//         }
+//     }
 
-    return newArray;
-}
-console.log(clearArray(array));
+//     return newArray;
+// }
+// console.log(clearArray(array));
 
 //TODO: 16 ===================================
 // Перевірити два масиву і дізнатися, чи вони рівні
