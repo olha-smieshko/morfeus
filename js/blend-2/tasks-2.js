@@ -111,11 +111,9 @@
 
 
 
-
 //! Object
 //TODO:=========task-3=================
 // 4. Виправте помилки, щоб код працював
-
 // const product = {
 // price: 5000,
 // showPrice() {
@@ -127,6 +125,13 @@
 
 
 
+// const product = {
+// ціна: 5000,
+// showPrice() {
+// console.log(price);
+// },
+//};
+// product.showPrice();
 
 
 //TODO:=========task-4=================
@@ -140,13 +145,14 @@
 //   carColor: 'black',
 // };
 
+
 // function getBool(obj, key){
 //   const keys = Object.keys(obj);
 //   return keys.includes(key);
 // }
 // const getBool = (obj, key) => key in obj; 
 // console.log(getBool(obj, 'car')); // true
-
+// console.log(getBool(obj, 'car')); // true
 
 
 
@@ -227,6 +233,7 @@ const filmoteka = [
 ];
 
 //? Напишіть функцію getAllTitlesOfFilms(films), яка повертає масив із усіма назвами фільмів.
+
 // const getAllTitlesOfFilms = (films) => films.map((el) => el.title)
 // console.log(getAllTitlesOfFilms(filmoteka));
 
