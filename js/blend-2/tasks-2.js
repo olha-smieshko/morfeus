@@ -47,9 +47,9 @@
 // }
 
 
-/********CONSOLE*********/
-console.log('Копія масиву:', sortArr(numbers)); //  [2, 3, 5, 7, 12, 24, 35, 56, 80]
-console.log('Початковий масив:', numbers); // [2, 5, 35, 56, 12, 24, 7, 80, 3]
+// /********CONSOLE*********/
+// console.log('Копія масиву:', sortArr(numbers)); //  [2, 3, 5, 7, 12, 24, 35, 56, 80]
+// console.log('Початковий масив:', numbers); // [2, 5, 35, 56, 12, 24, 7, 80, 3]
 
  
 
@@ -59,7 +59,55 @@ console.log('Початковий масив:', numbers); // [2, 5, 35, 56, 12, 
 //аргументів і повертає їхнє середнє значення.
 //Додати перевірку, що аргументи це числа.
 
-// console.log(calculateAverage(10, 10, 20, 200)); // 60
+// function calculateAverage() {
+//   const args = arguments;
+//   let total = 0;
+//   let result = 0;
+//   for (const number of args) {
+//     if(typeof number !== 'number') {
+//      continue; 
+//     }
+//     total += number
+//   }
+//   result = total / args.length;
+//   return result;
+// }
+
+// const calculateAverage = (...args) => {
+//   const arg = [...args];
+//   let total = 0;
+//   let result = 0;
+//   for (const number of arg) {
+//     if(typeof number !== 'number') {
+//      continue; 
+//     }
+//     total += number
+//   }
+//   result = total / arg.length;
+//   return result;
+// }
+
+// const calculateAverage = (...args) => [...args].reduce((acc, el) => acc += el / args.length, 0) 
+
+// const calculateAverage = (...args) => [...args].filter((el) => typeof el === "number").reduce((acc, el, _, arr) => acc += el / arr.length, 0) 
+
+
+ 
+
+// { 
+//   const arg = [...args];
+//   let total = 0;
+//   let result = 0;
+//   for (const number of arg) {
+//     if(typeof number !== 'number') {
+//      continue; 
+//     }
+//     total += number
+//   }
+//   result = total / arg.length;
+//   return result;
+// }
+console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
 
 //! Object
 //TODO:=========task-3=================
