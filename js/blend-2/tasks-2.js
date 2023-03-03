@@ -4,11 +4,54 @@
 //Повернути відсортовану копію масиву за зростанням
 //не змінюючи вихідний масив
 //не використовувати Array.prototype.sort()
-
+// console.log ("Hello")
 // const numbers = [2, 5, 35, 56, 12, 24, 7, 80, 3];
 
-// console.log('Копія масиву:', bb(numbers)); //  [2, 3, 5, 7, 12, 24, 35, 56, 80]
+// console.log('Копія масиву:', sortArr(numbers)); //  [2, 3, 5, 7, 12, 24, 35, 56, 80]
 // console.log('Початковий масив:', numbers); // [2, 5, 35, 56, 12, 24, 7, 80, 3]
+// const sortArr = (arr) => {
+//   const newArr = [...arr];
+//     for (let i = 0; i < newArr.length; i += 1) {
+//     for (let j = 1; j < newArr.length; j += 1) {
+//       if (newArr[j] > newArr[j + 1]) {
+//         let temp = newArr[j];
+//         newArr[j] = newArr[j + 1];
+//         newArr[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return newArr;
+//   debugger
+// }
+
+
+/********SORT*********/
+
+// ЗРОСТАННЯ
+
+// const sortArr = (arr) => [...arr].sort((a, b) => a - b);
+// СПАДАННЯ
+
+// const sortArr = (arr) => [...arr].sort((a, b) => b - a);
+
+
+// звичайна функція (((( declaration
+// function sortArr(arr) {
+//   return [...arr].sort((a, b) => a - b);
+// }
+
+
+// звичайна функція (((( expression
+// const sortArr = function (arr) {
+//   return [...arr].sort((a, b) => a - b);
+// }
+
+
+/********CONSOLE*********/
+console.log('Копія масиву:', sortArr(numbers)); //  [2, 3, 5, 7, 12, 24, 35, 56, 80]
+console.log('Початковий масив:', numbers); // [2, 5, 35, 56, 12, 24, 7, 80, 3]
+
+ 
 
 //TODO:=========task-2=================
 //Напишіть функцію caclculateAverage()
