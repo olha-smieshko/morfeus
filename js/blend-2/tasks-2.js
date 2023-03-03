@@ -107,11 +107,24 @@
 //   result = total / arg.length;
 //   return result;
 // }
-console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
+//console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
+
+
 
 //! Object
 //TODO:=========task-3=================
 // 4. Виправте помилки, щоб код працював
+// const product = {
+// price: 5000,
+// showPrice() {
+//   console.log(this.price);
+// },
+// };
+// product.showPrice();
+
+
+
+
 // const product = {
 // ціна: 5000,
 // showPrice() {
@@ -119,6 +132,7 @@ console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
 // },
 //};
 // product.showPrice();
+
 
 //TODO:=========task-4=================
 // Потрібно написати функцію, яка приймає 2 параметри obj і key, яка буде перебирати об'єкт.
@@ -131,7 +145,18 @@ console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
 //   carColor: 'black',
 // };
 
+
+// function getBool(obj, key){
+//   const keys = Object.keys(obj);
+//   return keys.includes(key);
+// }
+// const getBool = (obj, key) => key in obj; 
 // console.log(getBool(obj, 'car')); // true
+// console.log(getBool(obj, 'car')); // true
+
+
+
+
 
 //TODO:=========task-5=================
 const filmoteka = [
@@ -209,11 +234,27 @@ const filmoteka = [
 
 //? Напишіть функцію getAllTitlesOfFilms(films), яка повертає масив із усіма назвами фільмів.
 
+// const getAllTitlesOfFilms = (films) => films.map((el) => el.title)
+// console.log(getAllTitlesOfFilms(filmoteka));
+
+
 //? Напишіть функцію findFilmByName(films, filmTitle), яка шукає фільм за назвою.
+// const findFilmByName = (films, filmTitle) => films.find((el) => el.title === filmTitle)
+// console.log(findFilmByName(filmoteka, "Free Guy"));
+
 
 //? Напишіть функцію getAdultFilms(films), яка повертає масив усіх дорослих фільмів.
+// const getAdultFilms = (films) => films.filter((el) => el.adult)
+// console.log(getAdultFilms(filmoteka));
+
 
 //? Напишіть функцію getNotAdultFilms(films), яка повертає масив усіх фільмів без обмеження.
+// const getNotAdultFilms = (films) => films.filter((el) => el.adult).map((el) => el.title)
+// console.log(getNotAdultFilms(filmoteka));
+
+
+
+
 
 //TODO:=========task-6=================
 
