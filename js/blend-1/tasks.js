@@ -157,7 +157,7 @@ if (question === "ecmascript") {
 //         alert('Невірний пароль!');
 //     }
 // } else if (!loginInput) {
-//     alert('Я вас не знаю');
+//     alert('скасовано');
 // }
 
 //TODO: 9 ===================================
@@ -210,6 +210,12 @@ if (question === "ecmascript") {
 // Якщо це так - виведіть 'так', інакше виведіть 'ні'.
 
 // const str = 'abcde';
+// if (str.startsWith('b')) {
+//     alert('так');
+// } else {
+//         alert('ні');
+//     }
+
 // function checkFirstLetter(string, letter) {
 //     while (true) {
 //         string = prompt('Введіть рядок');
@@ -257,7 +263,7 @@ if (question === "ecmascript") {
 //TODO: 13 ===================================
 // Напишіть if..else, що відповідає наступному switch:
 
-//  const browser = 'Edge';
+//  const browser = 'Firefox';
 
 // switch (browser) {
 //   case 'Edge':
