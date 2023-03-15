@@ -65,7 +65,7 @@
 //   let result = 0;
 //   for (const number of args) {
 //     if(typeof number !== 'number') {
-//      continue; 
+//      continue;
 //     }
 //     total += number
 //   }
@@ -79,7 +79,7 @@
 //   let result = 0;
 //   for (const number of arg) {
 //     if(typeof number !== 'number') {
-//      continue; 
+//      continue;
 //     }
 //     total += number
 //   }
@@ -87,20 +87,20 @@
 //   return result;
 // }
 
-// const calculateAverage = (...args) => [...args].reduce((acc, el) => acc += el / args.length, 0) 
+// const calculateAverage = (...args) => [...args].reduce((acc, el) => acc += el / args.length, 0)
 
-// const calculateAverage = (...args) => [...args].filter((el) => typeof el === "number").reduce((acc, el, _, arr) => acc += el / arr.length, 0) 
+// const calculateAverage = (...args) => [...args].filter((el) => typeof el === "number").reduce((acc, el, _, arr) => acc += el / arr.length, 0)
 
 
  
 
-// { 
+// {
 //   const arg = [...args];
 //   let total = 0;
 //   let result = 0;
 //   for (const number of arg) {
 //     if(typeof number !== 'number') {
-//      continue; 
+//      continue;
 //     }
 //     total += number
 //   }
@@ -112,13 +112,13 @@
 //! Object
 //TODO:=========task-3=================
 // 4. Виправте помилки, щоб код працював
-const product = {
-price: 5000,
-showPrice() {
-console.log(this.price);
-},
-};
-product.showPrice();
+// const product = {
+// price: 5000,
+// showPrice() {
+// console.log(this.price);
+// },
+// };
+// product.showPrice();
 
 //TODO:=========task-4=================
 // Потрібно написати функцію, яка приймає 2 параметри obj і key, яка буде перебирати об'єкт.
@@ -130,86 +130,100 @@ product.showPrice();
 //   car: 'Mercedes',
 //   carColor: 'black',
 // };
-
+// // function getBool(obj, key) {
+// //   return key in obj;
+// // }
+// function getBool(obj, key) {
+//   for (let prop in obj) {
+//     if (prop === key) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
 // console.log(getBool(obj, 'car')); // true
 
 //TODO:=========task-5=================
-// const filmoteka = [
-//   {
-//     id: 1,
-//     title: 'Duna',
-//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-//     rating: 10,
-//     actors: [
-//       'Amelia Gibson',
-//       'Cameron Clayton',
-//       'Viola Vasquez',
-//       'Lula Collins',
-//       'Victor Nichols',
-//     ],
-//     adult: false,
-//   },
-//   {
-//     id: 2,
-//     title: 'Venom',
-//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-//     rating: 8,
-//     actors: [
-//       'Inez Greer',
-//       'Barry Curtis',
-//       'Blanche Rios',
-//       'Glen Perry',
-//       'Logan Powers',
-//     ],
-//     adult: true,
-//   },
-//   {
-//     id: 3,
-//     title: 'Luca',
-//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-//     rating: 9,
-//     actors: [
-//       'Marguerite Gibbs',
-//       'Lora Alvarez',
-//       'Jorge Simpson',
-//       'Thomas Hall',
-//       'Darrell Hunter',
-//     ],
-//     adult: false,
-//   },
-//   {
-//     id: 4,
-//     title: 'Free Guy',
-//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-//     rating: 6,
-//     actors: [
-//       'Calvin Andrews',
-//       'Mamie Myers',
-//       'Madge Townsend',
-//       'Ralph Kim',
-//       'Jorge Reese',
-//     ],
-//     adult: true,
-//   },
-//   {
-//     id: 5,
-//     title: 'Saw',
-//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-//     rating: 7,
-//     actors: [
-//       'Adele Marsh',
-//       'Melvin Burgess',
-//       'Jesus Reese',
-//       'Harriet Moreno',
-//       'Curtis Cox',
-//     ],
-//     adult: true,
-//   },
-// ];
+const filmoteka = [
+  {
+    id: 1,
+    title: 'Duna',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    rating: 10,
+    actors: [
+      'Amelia Gibson',
+      'Cameron Clayton',
+      'Viola Vasquez',
+      'Lula Collins',
+      'Victor Nichols',
+    ],
+    adult: false,
+  },
+  {
+    id: 2,
+    title: 'Venom',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    rating: 8,
+    actors: [
+      'Inez Greer',
+      'Barry Curtis',
+      'Blanche Rios',
+      'Glen Perry',
+      'Logan Powers',
+    ],
+    adult: true,
+  },
+  {
+    id: 3,
+    title: 'Luca',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    rating: 9,
+    actors: [
+      'Marguerite Gibbs',
+      'Lora Alvarez',
+      'Jorge Simpson',
+      'Thomas Hall',
+      'Darrell Hunter',
+    ],
+    adult: false,
+  },
+  {
+    id: 4,
+    title: 'Free Guy',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    rating: 6,
+    actors: [
+      'Calvin Andrews',
+      'Mamie Myers',
+      'Madge Townsend',
+      'Ralph Kim',
+      'Jorge Reese',
+    ],
+    adult: true,
+  },
+  {
+    id: 5,
+    title: 'Saw',
+    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    rating: 7,
+    actors: [
+      'Adele Marsh',
+      'Melvin Burgess',
+      'Jesus Reese',
+      'Harriet Moreno',
+      'Curtis Cox',
+    ],
+    adult: true,
+  },
+];
 
 //? Напишіть функцію getAllTitlesOfFilms(films), яка повертає масив із усіма назвами фільмів.
+// const getAllTitlesOfFilms = films => films.map(({ title }) => title);
+// console.log(getAllTitlesOfFilms(filmoteka));
 
 //? Напишіть функцію findFilmByName(films, filmTitle), яка шукає фільм за назвою.
+// const findFilmByName = (films, filmTitle) => films.filter(({ title }) => title === filmTitle);
+// console.log(findFilmByName(filmoteka, 'Saw'))
 
 //? Напишіть функцію getAdultFilms(films), яка повертає масив усіх дорослих фільмів.
 
