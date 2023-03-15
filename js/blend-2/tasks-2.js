@@ -107,7 +107,13 @@
 //   result = total / arg.length;
 //   return result;
 // }
+
+
+
+
+
 // console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
+
 
 //! Object
 //TODO:=========task-3=================
