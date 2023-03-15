@@ -107,18 +107,18 @@
 //   result = total / arg.length;
 //   return result;
 // }
-console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
+// console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
 
 //! Object
 //TODO:=========task-3=================
 // 4. Виправте помилки, щоб код працював
-// const product = {
-// ціна: 5000,
-// showPrice() {
-// console.log(price);
-// },
-//};
-// product.showPrice();
+const product = {
+price: 5000,
+showPrice() {
+console.log(this.price);
+},
+};
+product.showPrice();
 
 //TODO:=========task-4=================
 // Потрібно написати функцію, яка приймає 2 параметри obj і key, яка буде перебирати об'єкт.
@@ -134,78 +134,78 @@ console.log(calculateAverage(10, 10, 100, 200, "kjljl")); // 80
 // console.log(getBool(obj, 'car')); // true
 
 //TODO:=========task-5=================
-const filmoteka = [
-  {
-    id: 1,
-    title: 'Duna',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    rating: 10,
-    actors: [
-      'Amelia Gibson',
-      'Cameron Clayton',
-      'Viola Vasquez',
-      'Lula Collins',
-      'Victor Nichols',
-    ],
-    adult: false,
-  },
-  {
-    id: 2,
-    title: 'Venom',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    rating: 8,
-    actors: [
-      'Inez Greer',
-      'Barry Curtis',
-      'Blanche Rios',
-      'Glen Perry',
-      'Logan Powers',
-    ],
-    adult: true,
-  },
-  {
-    id: 3,
-    title: 'Luca',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    rating: 9,
-    actors: [
-      'Marguerite Gibbs',
-      'Lora Alvarez',
-      'Jorge Simpson',
-      'Thomas Hall',
-      'Darrell Hunter',
-    ],
-    adult: false,
-  },
-  {
-    id: 4,
-    title: 'Free Guy',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    rating: 6,
-    actors: [
-      'Calvin Andrews',
-      'Mamie Myers',
-      'Madge Townsend',
-      'Ralph Kim',
-      'Jorge Reese',
-    ],
-    adult: true,
-  },
-  {
-    id: 5,
-    title: 'Saw',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    rating: 7,
-    actors: [
-      'Adele Marsh',
-      'Melvin Burgess',
-      'Jesus Reese',
-      'Harriet Moreno',
-      'Curtis Cox',
-    ],
-    adult: true,
-  },
-];
+// const filmoteka = [
+//   {
+//     id: 1,
+//     title: 'Duna',
+//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+//     rating: 10,
+//     actors: [
+//       'Amelia Gibson',
+//       'Cameron Clayton',
+//       'Viola Vasquez',
+//       'Lula Collins',
+//       'Victor Nichols',
+//     ],
+//     adult: false,
+//   },
+//   {
+//     id: 2,
+//     title: 'Venom',
+//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+//     rating: 8,
+//     actors: [
+//       'Inez Greer',
+//       'Barry Curtis',
+//       'Blanche Rios',
+//       'Glen Perry',
+//       'Logan Powers',
+//     ],
+//     adult: true,
+//   },
+//   {
+//     id: 3,
+//     title: 'Luca',
+//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+//     rating: 9,
+//     actors: [
+//       'Marguerite Gibbs',
+//       'Lora Alvarez',
+//       'Jorge Simpson',
+//       'Thomas Hall',
+//       'Darrell Hunter',
+//     ],
+//     adult: false,
+//   },
+//   {
+//     id: 4,
+//     title: 'Free Guy',
+//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+//     rating: 6,
+//     actors: [
+//       'Calvin Andrews',
+//       'Mamie Myers',
+//       'Madge Townsend',
+//       'Ralph Kim',
+//       'Jorge Reese',
+//     ],
+//     adult: true,
+//   },
+//   {
+//     id: 5,
+//     title: 'Saw',
+//     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+//     rating: 7,
+//     actors: [
+//       'Adele Marsh',
+//       'Melvin Burgess',
+//       'Jesus Reese',
+//       'Harriet Moreno',
+//       'Curtis Cox',
+//     ],
+//     adult: true,
+//   },
+// ];
 
 //? Напишіть функцію getAllTitlesOfFilms(films), яка повертає масив із усіма назвами фільмів.
 
