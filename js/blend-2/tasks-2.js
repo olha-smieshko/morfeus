@@ -251,7 +251,8 @@
 // новий об'єкт без зазначених параметрів
 // Очікуваний результат ({a: 1, b: 2, c: 3}, 'b', 'a') => {c: 3}
 // const updateObject = (obj, ...deleted) => {
-//   const newObj = { ...obj };
+//     const newObj = { ...obj };
+//     console.log(newObj);
 //   deleted.forEach(key => delete newObj[key]);
 //   return newObj;
 // }
