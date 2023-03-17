@@ -6,7 +6,17 @@
 //greet(name) - коллбек, що приймає ім'я і логірує в консоль
 //Рядок "Привіт <name>"
 //Реалізуй перевірку, що prompt не порожній
-
+// function letMeSeeYourName(callback) {
+//   const name = prompt("Введіть Ваше ім'я");
+//   if (name && name.trim()) {
+//     return callback(name);
+//   } 
+//   alert("Ім'я не може бути порожнім");
+// }
+// function greet(name) {
+//   alert(`Привіт ${name}`);
+// }
+// letMeSeeYourName(greet);
 //TODO:=================02=============================
 //Напишіть дві функції
 //makeProduct(name, price, callback) - приймає
@@ -16,7 +26,15 @@
 //Передаючи йому створений об'єкт.
 //showProduct(product) - коллбек приймаючий об'єкт
 //продукту і логірующий їх у консоль
-
+// function makeProduct(name, price, callback) {
+//   const id = Math.floor(Math.random() * 1000);
+//   const product = { id, name, price };
+//   callback(product);
+// }
+// function showProduct(product) {
+//   console.table(`Товар # ${product.id}: ${product.name}, ціна ${product.price}грн`)
+// }
+// makeProduct('молоко', 50, showProduct);
 //TODO:=================03=============================
 // Напишіть функцію makeShef(shefName), яка повертає функцію
 // makeDish(dish), що пам'ятає ім'я шефа при її виклику
