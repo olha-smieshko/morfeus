@@ -40,13 +40,25 @@
 // makeDish(dish), що пам'ятає ім'я шефа при її виклику
 // Функція makeDish має логірувати "<shef> is cooking <dish>"
 
+// function makeShef(shefName) {
+//   return function makeDish(dish) {
+//     console.log(`${shefName} is cooking ${dish}`)
+//   }
+// }
+
+// const shef1 = makeShef("Iryna");
+// const shef2 = makeShef("Olha");
+// shef1("pizza");
+// shef2("pasta");
+
+
 //TODO:=================04=============================
 
 // Виправте помилки, щоб код працював
 // const product = {
 //     price: 5000,
 //     showPrice() {
-//         console.log(price)
+//         console.log(this.price)
 
 //     },
 // }
@@ -78,6 +90,23 @@
 
 const array = [3, 5, 6, 34, 8, 83, 12, 34];
 
+// function each(array, callback) {
+//   const newArray = [];
+   
+//   for(let i = 0; i < array.length; i += 1) {
+//     newArray.push(callback(array[i]))
+    
+//   }
+//   return newArray;
+// }
+
+// function each(array, callback) {
+//   const newArray = array.map((el) => callback(el));
+   
+//   return newArray;
+// }
+
+// console.log(each(array, (value) => value * 2))
 //TODO:==================07============================
 //Напишіть функцію makeCounter, яка повертає іншу
 //функцію, яка вважає та логує кількість своїх викликів
@@ -98,6 +127,8 @@ const array = [3, 5, 6, 34, 8, 83, 12, 34];
 // ? Знайдіть перше непарне число
 
 // const numbers = [2, 1, 6, 8, 9, 10, 12]
+// const oddNumber = numbers.find((el) => el % 2)
+// console.log(oddNumber)
 
 //TODO:===========task-11===============
 
@@ -190,10 +221,10 @@ const users = [
 
 //TODO:==========================
 // Отримати масив імен всіх користувачів (поле name).
-
+// console.log(users.map(({name}) => name))
 //TODO:==========================
 // Отримати масив об'єктів користувачів за кольором очей (eyeColor).
-
+// const getUsersByColor = (users, color) => users.filter(({eyeColor}) => eyeColor === color)
 // console.log(getUsersByColor(users, 'brown'))
 // console.log(getUsersByColor(users, 'blue')) // [объект Moore Hensley, объект Sharlene Bush, объект Carey Barr]
 
@@ -247,14 +278,20 @@ const users = [
 
 // const concerts = {
 //     Київ: new Date('2020-04-01'),
-//     Умань: new Date('2023-07-02'),
+//     Умань: new Date('2023-08-02'),
 //     Вінниця: new Date('2020-04-21'),
 //     Одеса: new Date('2023-07-15'),
-//     Хмельницький: new Date('2020-04-18'),
+//     Хмельницький: new Date('2023-04-18'),
 //     Харків: new Date('2023-07-10'),
 // }
 
+// const concertsToArray = (concerts) => Object.keys(concerts)
+// .filter((city) => concerts[city] > new Date())
+// .sort((a, b) => concerts[a] - concerts[b])
+
 // console.log(concertsToArray(concerts))
+
+
 
 //TODO:=========task-13=================
 // У кожному масиві якщо унікальний рядок, у якому не повторюються літери. Знайдіть і виведіть цей рядок.
