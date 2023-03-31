@@ -88,7 +88,7 @@
 //якого будуть результати виклику callback
 //callback функції повинна множити елементи на 2
 
-const array = [3, 5, 6, 34, 8, 83, 12, 34];
+// const array = [3, 5, 6, 34, 8, 83, 12, 34];
 
 // function each(array, callback) {
 //   const newArray = [];
@@ -296,6 +296,61 @@ const users = [
 //TODO:=========task-13=================
 // У кожному масиві якщо унікальний рядок, у якому не повторюються літери. Знайдіть і виведіть цей рядок.
 // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt
+
+/************************* Варіант1 **********************/
+// function findUniq(arr) {
+//   // ["abc", "acb", "bac", "foo", "bca", "cab", "cba"]
+//   return arr.find((current, i) => current.split("").every((item) =>
+//           arr.every((comparison, j) => i !== j ? !comparison.includes(item) : true)));
+// }
+
+/************************* Варіант2 **********************/
+// function findUniq(arr) {
+//     for (let i = 0; i < arr.length; i += 1) {
+//       const result = arr[i].split("").every((item) => {
+//         for (let j = 0; j < arr.length; j += 1) {
+//           if (i !== j) {
+//             if (!arr[j].includes(item)) {
+//               return true;
+//             }else{
+//               return false
+//             }
+//           }
+//         }
+//       });
+//       if(result){
+//           return arr[i]
+//       }
+//     }
+//   }
+
+//   const arr = ["acb", "bac", "foo", "bca", "cab", "cba"];
+
+/************************* Варіант3 **********************/
+// // from GPT - НЕ ПРАЦЮЄ!!!!!!
+// function findUniq(arr) {
+// let uniqueString = null;
+
+// for (let str of arr) {
+//   let isUnique = true;
+//   for (let i = 0; i < str.length; i++) {
+//     if (str.indexOf(str[i]) !== str.lastIndexOf(str[i])) {
+//       isUnique = false;
+//       break;
+//     }
+//   }
+//   if (isUnique) {
+//     uniqueString = str;
+//     break;
+//   }
+// }
+//   return uniqueString;
+// console.log(uniqueString); // "foo"
+// }
+
+/************************* Варіант4 **********************/
+// const findUniq =(arr) => arr.find((current, i) => current.split("").every((item) =>
+// arr.every((comparison, j) => i !== j ? !comparison.includes(item) : true)));
 
 // console.log(findUniq(['abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba'])); // === 'foo'
 // console.log(findUniq(['fghj', 'ghfj', 'abcd', 'jhgf', 'fghj', 'fgjh', 'ghjf'])); // === 'abcd'
