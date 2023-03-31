@@ -230,41 +230,42 @@ const users = [
 
 //TODO:==========================
 // Отримати масив імен користувачів за статтю (поле gender)
-
+// const getUsersWithGender = (users, userGender) => users.filter(({gender}) => gender === userGender).map(({name}) => name)
 // console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
 
 //TODO:==========================
 // Отримати масив тільки неактивних користувачів (поле isActive).
-
+// const getInactiveUsers = users => users.filter(({isActive}) => !isActive)
 // console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
 
 //TODO:==========================
 // Отримати масив користувачів віком від min до max
-
+// const getUsersWithAge = (users, min, max) => users.filter(({age})=> age > min && age < max)
 // console.log(getUsersWithAge(users, 30, 40));
 // [объект Moore Hensley, объект Sharlene Bush, объект Blackburn Dotson, объект Sheree Anthony]
 
 //TODO:==========================
 // Отримати загальну суму балансу (поле balance) всіх користувачів.
-
+// const calculateTotalBalance = users => users.reduce((acc, { balance }) => acc + balance, 0);
 // console.log(calculateTotalBalance(users)); // 20916
 
 //TODO:==========================
 // Масив імен всіх користувачів, у яких є товарищь із зазначеним ім'ям.
 
+// const getUsersWithFriend = (users, friend) => users.filter(({ friends }) => friends.includes(friend)).map(({ name }) => name);
 // console.log(getUsersWithFriend(users, 'Briana Decker')); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 // console.log(getUsersWithFriend(users, 'Goldie Gentry')); // [ 'Elma Head', 'Sheree Anthony' ]
 
 //TODO:==========================
 // Масив імен (поле name) людей, відсортованих залежно кількості їх друзів (поле friends)
-
+// const getNamesSortedByFriendsCount = users => users.sort(({ friends: a }, { friends: b }) => a.length - b.length).map(({ name }) => name);
 // console.log(getNamesSortedByFriendsCount(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 //TODO:==========================
 // Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не повинно бути
 // Уміння, що повторюються, і вони повинні бути відсортовані в алфавітному порядку.
-
+// const getSortedUniqueSkills = users => users.flatMap(({ skills }) => skills).sort((a, b) => a.localeCompare(b));
 // console.log(getSortedUniqueSkills(users));
 // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
 
