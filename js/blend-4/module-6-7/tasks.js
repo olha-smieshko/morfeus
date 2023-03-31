@@ -1,11 +1,64 @@
 //TODO:====================01==========================
 // Натискання на кновку "SHOW ME" має виводити значення з поля введення в alert
+// const btnEl = document.querySelector('.js-alert-button');
+// const inputEl = document.querySelector('.js-alert-input');
+// // console.log(btnEl);
+// // console.log(inputEl);
+// btnEl.addEventListener('click', onBtnClick);
+// function onBtnClick() {
+//     if (!inputEl.value.trim()) {
+//         console.log('empty')
+//         return;
+//     }
+//     alert(inputEl.value.trim());
+// }
 
 //TODO:====================02==========================
 // Після натискання на кнопку "SWAP ME" здійснюється обмін вмістом між двома інпутами. Можете натискати на неї кілька разів або вручну змінити вміст інпутів.
+// const btnEl = document.querySelector('.js-swap-button');
+// const inputLeftEl = document.querySelector('.js-left-swap-input');
+// const inputRightEl = document.querySelector('.js-right-swap-input');
+// btnEl.addEventListener('click', onBtnChange);
+// function onBtnChange() {
+//     const left = inputLeftEl.value.trim();
+//     const right = inputRightEl.value.trim();
+//     if (!left || !right) {
+//         console.log('empty')
+//         return;
+//      }
+
+//     console.log('left:', left, 'right:', right);
+//     inputLeftEl.value = right;
+//     inputRightEl.value = left;
+// }
+// function onBtnChange() {
+//     const left = inputLeftEl.value.trim();
+//     if (!left || !inputRightEl.value.trim()) {
+//         console.log('empty')
+//         return;
+//      }
+
+//      console.log('left:', left, 'right:', inputRightEl.value.trim());
+//     inputLeftEl.value = inputRightEl.value.trim();
+//     inputRightEl.value = left;
+// }
 
 //TODO:====================03==========================
 // Кнопка "Приховати" ховає текст і замінює назву кнопки на "Розкрити", у разі повторного натискання текст знову стає доступним і кнопка набуває початкового вигляду.
+// const btnEl = document.querySelector('.js-password-button');
+// const pasInputEl = document.querySelector('.js-password-input');
+// btnEl.addEventListener('click', () => {
+//     // console.log('empty')
+//     if (pasInputEl.type === 'text') {
+//         console.log(pasInputEl.type);
+//         pasInputEl.type = 'password'
+//         btnEl.textContent = 'Розкрити'
+//         console.log(pasInputEl.type);
+//         return;
+//     }
+//     pasInputEl.type = 'text'
+//     btnEl.textContent = 'Приховати'
+// })
 
 //TODO:====================04==========================
 //  Створіть HTML сторінку з табличкою,
@@ -13,6 +66,7 @@
 //  табличці повинен містити назву продукту та його ціну.
 //  При натисканні на будь - який рядок у табличці відобразіть
 //  повідомлення з назвою продукту та його ціною.
+
 
 //TODO:====================05==========================
 // Написати функцію, яка буде створювати список подій клавіатури event.key та event.code
