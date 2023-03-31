@@ -104,12 +104,50 @@
 //TODO:====================06==========================
 // Кнопка "Зменшити" робить квадрат меншим на 10 пікселів, кнопка "Збільшити" - робить більшим на 10 пікселів.
 
+/* const btnDecreaseEl = document.querySelector('.js-decrease');
+const btnIncreaseEl = document.querySelector('.js-increase');
+const boxEl = document.querySelector('.box');
+
+btnDecreaseEl.addEventListener('click', onBtnClick);
+btnIncreaseEl.addEventListener('click', onBtnClick);
+
+function onBtnClick(evt) {
+    const id = evt.target.id;
+    const { offsetWidth } = boxEl;
+    if (id === 'decrease') {
+        boxEl.style.width = `${offsetWidth - 10}px`
+        boxEl.style.height = `${offsetWidth - 10}px`
+        return;
+    } 
+    boxEl.style.width = `${offsetWidth + 10}px`
+    boxEl.style.height = `${offsetWidth + 10}px`
+} */
+
+
 //TODO:====================07==========================
 // Навісьте слухач за кліком на глобальний об'єкт window і визначте, коли клік відбувається всередині елемента з класом "place", виведіть в консоль повідомлення "Ви клікнули в цільовий елемент". Коли клік припадає поза зоною елемента, виведіть повідомлення "Це не цільовий елемент". Використайте метод contains.
 // https://developer.mozilla.org/en-US/docs/Web/API/Node/contains
+/* const divEl = document.querySelector('.place')
+document.addEventListener('click', (event) => {
+    if (divEl.contains(event.target)) {
+        console.log('Ви клікнули в цільовий елемент');
+        return
+    }
+    console.log('Це не цільовий елемент');
+}) */
 
 //TODO:====================08==========================
 // По кліку на кнопку "Подвоїти" збільшити значення у кожному елементі списку в 2 рази
+
+/* const btnEl = document.querySelector('.js-double-btn');
+const itemsEl = document.querySelectorAll('.js-list-item');
+
+console.log(itemsEl);
+
+btnEl.addEventListener('click', () => {
+    [...itemsEl].map((element) => element.textContent = +element.textContent * 2
+    )
+}) */
 
 //TODO:====================09==========================
 // При кліку на коло воно має слідувати за курсором. При повторному кліку воно стає в початкове положення.
@@ -135,3 +173,19 @@
 
 //TODO:====================15==========================
 // Коло має зникати під час наведення на нього.При цьому позиція сусідніх кіл повинна залишатися незмінною.
+
+/* const ulEl = document.querySelector('.grid');
+
+ulEl.addEventListener('mouseover', (event) => {
+    if (!event.target.classList.contains('grid-item')) {
+        return
+    }
+    event.target.style.opacity = 0
+})
+
+ulEl.addEventListener('mouseout', (event) => {
+    if (!event.target.classList.contains('grid-item')) {
+        return
+    }
+    event.target.style.opacity = 1
+}) */
