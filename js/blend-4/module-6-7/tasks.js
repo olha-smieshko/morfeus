@@ -66,11 +66,40 @@
 //  табличці повинен містити назву продукту та його ціну.
 //  При натисканні на будь - який рядок у табличці відобразіть
 //  повідомлення з назвою продукту та його ціною.
+// const tableEl = document.querySelector('#productTable');
+// const containerEl = document.querySelector('#productDetails');
+
+// tableEl.addEventListener('click', (evt) => {
+//   if (evt.target.nodeName !== "TD") {
+//     return;
+//   }
+
+  // const row = evt.target.parentNode.cells;
+  // const name = row[0].textContent;
+  // const price = row[1].textContent;
+
+  // console.log(`Ви вибрали ${name} за ціною  ${price}`);
+
+//  })
 
 
 //TODO:====================05==========================
 // Написати функцію, яка буде створювати список подій клавіатури event.key та event.code
 // Додати класи на список eventList, на елементи eventCode та eventKey
+
+// const containerEl = document.querySelector('.eventThumb');
+// document.addEventListener('keydown', ({ code, key}) => {
+  
+//   const markup = `
+//     <ul>
+//       <li><b>${code}</b></li>
+//       <li>${key}</li>
+//     </ul>
+//   `
+//   containerEl.insertAdjacentHTML('afterbegin', markup);
+
+// })
+
 
 //TODO:====================06==========================
 // Кнопка "Зменшити" робить квадрат меншим на 10 пікселів, кнопка "Збільшити" - робить більшим на 10 пікселів.
